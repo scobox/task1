@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=KumbhSans:wght@300;700&display=swap");
 .page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,11 +10,109 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-height: 400px;
+  font-family: KumbhSans, sans-serif;
 }
 
-.greenContainer {
+.green-container {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
   width: 100%;
-  min-height: 300px;
+  min-height: 360px;
   height: 60%;
   background: #19a2ae;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.green-container__card {
+  height: 280px;
+  width: 260px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+
+.green-container__card:before {
+  content: '';
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 68px;
+  left: 90px;
+  background: url("/images/image-victor.jpg") 0 0/100% auto no-repeat;
+  border: 3px solid #fff;
+  border-radius: 40px;
+  z-index: 4;
+}
+
+.green-container__card:after {
+  content: '';
+  position: absolute;
+  width: 260px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  background: url("/images/bg-pattern-card.svg") 0 0/100% auto no-repeat;
+}
+
+.green-container__card-top {
+  height: 160px;
+}
+
+.green-container__card-text {
+  color: #6a6f81;
+}
+
+.green-container__card-text span {
+  font-weight: 700;
+  color: #000;
+  padding: 0 3px 0 0;
+}
+
+.green-container__card-text i {
+  font-style: normal;
+  font-size: 10px;
+  color: #6a6f81;
+}
+
+.green-container__card-social-count {
+  margin: 20px 0 0 0;
+  padding: 15px 0 0 0;
+  border-top: 1px solid #f1f1f1;
+}
+
+.social-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-count-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  font-size: 8px;
+  color: #6a6f81;
+}
+
+.social-count-item span {
+  padding: 0 0 5px 0;
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
 }
