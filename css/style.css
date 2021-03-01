@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=KumbhSans:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=KumbhSans:wght@300;400;700&display=swap");
 .page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,6 +35,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.green-container:before {
+  content: '';
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  top: -450px;
+  left: -300px;
+  background: url(../images/bg-pattern-top.svg) 0 0/100% auto no-repeat;
+  z-index: 0;
 }
 
 .green-container__card {
@@ -53,7 +66,7 @@
   height: 65px;
   top: 68px;
   left: 90px;
-  background: url("/images/image-victor.jpg") 0 0/100% auto no-repeat;
+  background: url("../images/image-victor.jpg") 0 0/100% auto no-repeat;
   border: 3px solid #fff;
   border-radius: 40px;
   z-index: 4;
@@ -66,7 +79,7 @@
   height: 200px;
   top: 0;
   left: 0;
-  background: url("/images/bg-pattern-card.svg") 0 0/100% auto no-repeat;
+  background: url("../images/bg-pattern-card.svg") 0 0/100% auto no-repeat;
 }
 
 .green-container__card-top {
